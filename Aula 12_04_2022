@@ -36,51 +36,39 @@ int main()
 
 		else if ((a == b) && (b > c))
 		{
-
 			cout << "\nMaior numero: " << a;
 			cout << "\nMenor numero: " << c;
 			cout << "\n";
-
 		}
 		else if ((a == b) && (b < c))
 		{
-
 			cout << "\nMaior numero: " << c;
 			cout << "\nMenor numero: " << a;
 			cout << "\n";
-
 		}
 		else if ((a == c) && (b > c))
 		{
-
 			cout << "\nMaior numero: " << b;
 			cout << "\nMenor numero: " << c;
 			cout << "\n";
-
 		}
 		else if ((a == c) && (b < c))
 		{
-
 			cout << "\nMaior numero: " << c;
 			cout << "\nMenor numero: " << b;
 			cout << "\n";
-
 		}
 		else if ((b == c) && (a > c))
 		{
-
 			cout << "\nMaior numero: " << a;
 			cout << "\nMenor numero: " << c;
 			cout << "\n";
-
 		}
 		else
 		{
-
 			cout << "\nMaior numero: " << c;
 			cout << "\nMenor numero: " << a;
 			cout << "\n";
-
 		}
 	}
 
