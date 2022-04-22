@@ -1,0 +1,413 @@
+
+#include <iostream>
+
+using namespace std;
+
+void conversorSeg(int s);
+void volumeEsfera(float r);
+void testeDeValidacao_NUMERO_PRIMO(int n);
+void conversorParaDias(int ANOS, int MESES, int DIAS);
+void valorPerfeito(int n);
+void numerosEmOrdemCrescente(int A, int B, int C);
+void numeroDeDivisores(int N);
+void equacaoDaQuesta_2_13(float N);
+
+int main()
+{
+	//Lista: Exercicio 2.1
+	/*
+	int pCx, pCy;
+	int r;
+	int pTx, pTy;
+	float d;
+
+	cout << "\nForneca os dados de um circulo e os dados de um ponto.\nO Progama testara se o ponto fornecido esta dentro a area do ciculo.\n\n";
+
+	cout << "Digite a cordenada X do centro o circulo: ";
+	cin >> pCx;
+
+	cout << "\nDigite a cordenada Y do centro o circulo: ";
+	cin >> pCy;
+
+	cout << "\nDigite o raio do circulo: ";
+	cin >> r;
+
+	cout << "\n::::::::::\n\nAgora digite os dados do ponto que voce deseja testar.\n\nCordenada X: ";
+	cin >> pTx;
+
+	cout << "\nCordenada Y: ";
+	cin >> pTy;
+
+	d = sqrt(pow((pTy - pCy), 2) + pow((pTx - pCx), 2));
+
+	if (d > r)
+	{
+		cout << "\nO ponto testado esta fora da area do circulo.\n\n\n";
+	}
+	else
+	{
+		cout << "\nO ponto testado esta dentro de area do circulo.\n\n\n";
+	}
+	*/
+
+	//Lista: Exercicio 2.2
+	/*
+	int r;
+
+	cout << "\nCALCULO DO VOLUME DE UMA ESERA.\n\nDigite o valor do raio da esfera: ";
+	cin >> r;
+
+	volumeEsfera(r);
+	return 0;
+	*/
+
+	//Lista: Exercicio 2.3
+	/*
+	float n1, n2, n3;
+	string p;
+	
+	float MEDIA_ARITMETICA, MEDIA_PONDERADA, MEDIA_HARMONICA;
+
+	cout << "\nCALCULO DE MEDIAS\n\nDigite a nota 1/3: ";
+	cin >> n1;
+
+	cout << "\nDigite a nota 2/3: ";
+	cin >> n2;
+
+	cout << "\nDigite a nota 3/3: ";
+	cin >> n3;
+
+	cout << "\n::::::::::" <<
+		"\n\nEscolha o tipo de media que deseja calcular:\n" <<
+		"[A] Para o calculo da media aritmetica.\n" <<
+		"[P] Para o calculo da media ponderada.\n" <<
+		"[H] Para o calculo da meda harmonica.\n\n --> ";
+	cin >> p;
+
+	cout << "\n::::::::::\n\n";
+
+	if ((p == "A") || (p == "a"))
+	{
+		MEDIA_ARITMETICA = (n1 + n2 + n3) / 3;
+		cout << "MEDIA ARITMETICA: " << MEDIA_ARITMETICA << "\n\n\n";
+	}
+	else if ((p == "P") || (p == "p"))
+	{
+		n1 = n1 * 5;
+		n2 = n2 * 3;
+		n3 = n3 * 2;
+
+		MEDIA_PONDERADA = (n1 + n2 + n3) / 10;
+		cout << "MEDIA PONDERADA: " << MEDIA_PONDERADA << "\n\n\n";
+	}
+	else if ((p == "H") || (p == "h"))
+	{
+		n1 = 1 / n1;
+		n2 = 1 / n2;
+		n3 = 1 / n3;
+
+		MEDIA_HARMONICA = 3 / (n1 + n2 + n3);
+		cout << "MEDIA HARMONICA: " << MEDIA_HARMONICA << "\n\n\n";
+	}
+	else
+	{
+		cout << "Opcao invalida.";
+	}
+	*/
+
+	//Lista: Exercicio 2.4
+	/*
+	int n;
+
+	cout << "\nPRIMO OU NAO PRIMO. \n\nDigite um numero: ";
+	cin >> n;
+
+	testeDeValidacao_NUMERO_PRIMO(n);
+	return 0;
+	*/
+
+	//Lista: Exercicio 2.5
+	/*
+	float a, b, c;
+	float d;
+
+	float BHASKARA_X1, BHASKARA_X2;
+
+	cout << "\n::::::::::BHASKARA::::::::::\nDigite os valores das variaves A, B e C.\n\nA: ";
+	cin >> a;
+
+	cout << "\nB: ";
+	cin >> b;
+
+	cout << "\nC: ";
+	cin >> c;
+
+	d = pow(b, 2) - 4 * a * c;
+
+	if (d < 0)
+	{
+		cout << "\n\n!! ATENCAO !!\nO calculo nao pode ser feito com os valores fornecidos\n\n\n";
+	}
+	else
+	{
+		BHASKARA_X1 = (-b + sqrt(d)) / (2 * a);
+		BHASKARA_X2 = (-b - sqrt(d)) / (2 * a);
+
+		cout << "\n\nRESULTADO\nX1: " << BHASKARA_X1 << "\nX2: " << BHASKARA_X2 << "\n\n\n";
+	}
+	*/
+
+	//Lista: Exercicio 2.6
+	/*
+	int s;
+	
+	cout << "\nQual o tempo de duracao do evento (em segundos): ";
+	cin >> s;
+
+	conversorSeg(s);
+	return 0;
+	*/
+
+	//Lista: Exercicio 2.7
+	/*
+	int a, m, d;
+
+	cout << "\n:::::CONVERSOR PARA DIAS:::::\n\nQuantos anos voce tem: ";
+	cin >> a;
+
+	cout << "\nQuantos anos voce tem: ";
+	cin >> m;
+
+	cout << "\nQuantos dias voce tem: ";
+	cin >> d;
+
+	conversorParaDias(a, m, d);
+	return 0;
+	*/
+
+	//Lista: Exercicio 2.8
+	/*
+	int n;
+
+	cout << "\n:::E UM NUMERO PERFEITO?:::\n\nDigite um numero inteiro qualquer: ";
+	cin >> n;
+
+	valorPerfeito(n);
+	return 0;
+	*/
+
+	//Lista: Exercicio 2.9
+	/*
+	int a, b, c;
+
+	cout << "Digite 3 numeros inteiros\n\n1/3: ";
+	cin >> a;
+
+	cout << "\n2/3: ";
+	cin >> b;
+
+	cout << "\n3/3: ";
+	cin >> c;
+
+	numerosEmOrdemCrescente(a, b, c);
+	return 0;
+	*/
+
+	//Lista: Exercicio 2.10
+	//É igual ao Exercicio 1.10, só que fazer uma função e tem que por os minutos.
+
+	//Lista: Exercicio 2.11
+	/*
+	int n;
+
+	cout << "\nDIVISORES\n\nEscreva um numero inteiro qualquer: ";
+	cin >> n;
+
+	numeroDeDivisores(n);
+	return 0;
+	*/
+
+	//Lista: Exercicio 2.12
+	//Não entendi a questão
+
+	//Lista: Exercicio 2.13
+	/*
+	float n;
+
+	cout << "\n ::::::::::EQUACAO::::::::::\n\nS = 1 + (1 / 2) + (1 / 3) + (1 / 4) + (1 / 5) + (1 / N)" <<
+		"\n\nDigite uma valor inteiro e positivo para \"N\": ";
+	cin >> n;
+
+	equacaoDaQuesta_2_13(n);
+	return 0;
+	*/
+}
+
+void volumeEsfera(float RAIO)
+{
+	float VOLUME;
+	double PI = 2 * acos(0.0);
+
+	VOLUME = (4 * PI * pow(RAIO, 3)) / 3;
+
+	cout << "\nO volume e igual a: " << VOLUME << "\n\n\n";
+}
+
+void testeDeValidacao_NUMERO_PRIMO(int NUMERO)
+{
+	int PARAMETRO;
+	int i = 1;
+	int NAO_PRIMO = 0;
+
+	while (i < NUMERO)
+	{
+		PARAMETRO = NUMERO % i;
+
+		if ((PARAMETRO == 0) && (i != 1))
+		{
+			cout << "\nFALSO --> O numero digitado nao e primo" << "\n\n\n";
+			NAO_PRIMO = 1;
+			break;
+		}
+
+		i++;
+	}
+
+	if (NAO_PRIMO == 0)
+	{
+		cout << "\nVERDADEIRO --> O numero digitado e primo" << "\n\n\n";
+	}
+}
+
+void conversorSeg(int SEGUNDOS)
+{
+	
+	int HORAS = 0;
+	int MINUTOS = 0;
+
+	while (SEGUNDOS >= 60)
+	{
+		SEGUNDOS -= 60;
+		MINUTOS += 1;
+	}
+	while (MINUTOS >= 60)
+	{
+		MINUTOS -= 60;
+		HORAS += 1;
+	}
+
+	cout << "\n\nO evento durou " << HORAS << " horas, " << MINUTOS << " minutos e " << SEGUNDOS << " segundos.\n\n\n";
+}
+
+void conversorParaDias(int ANOS, int MESES, int DIAS)
+{
+	int RESTO;
+
+	MESES = ANOS * 12;
+	RESTO = (ANOS * 12) % 30;
+	DIAS = (MESES * 30) + RESTO;
+
+	cout << "\n\nSua idade em dias e igual a: " << DIAS << " dias.\n\n\n";
+}
+
+void valorPerfeito(int N)
+{
+	int i = 1;
+	int SOMA_DOS_DIVISORES = 0;
+
+	while (i < N)
+	{
+		if (N % i == 0)
+		{
+			SOMA_DOS_DIVISORES += i;
+		}
+
+		i++;
+	}
+
+	if (SOMA_DOS_DIVISORES == N)
+	{
+		cout << "\nVERDADEIRO --> E um numero perfeito!\n\n\n";
+	}
+	else
+	{
+		cout << "\nFALSO --> Nao e um numero perfeito.\n\n\n";
+	}
+}
+
+void numerosEmOrdemCrescente(int A, int B, int C)
+{
+
+	int MAIOR, MEIO, MENOR;
+
+	if (A > B) //Para o maior
+	{
+		MAIOR = A;
+	}
+	else
+	{
+		MAIOR = B;
+	}
+	if (C > B)
+	{
+		MAIOR = C;
+	}
+
+	if (A < B) //Para o menor
+	{
+		MENOR = A;
+	}
+	else
+	{
+		MENOR = B;
+	}
+	if (C < B)
+	{
+		MENOR = C;
+	}
+
+	if ((MAIOR == A && MENOR == B) //Para o meio
+		|| (MAIOR == B && MENOR == A))
+	{
+		MEIO = C;
+	}
+	else if ((MAIOR == A && MENOR == C)
+		|| (MAIOR == C && MENOR == A))
+	{
+		MEIO = B;
+	}
+	else if ((MAIOR == B && MENOR == C)
+		|| (MAIOR == C && MENOR == B))
+	{
+		MEIO = A;
+	}
+
+	cout << "\n\nOrdem Crescente: " << MENOR << ", " << MEIO << ", " << MAIOR << "\n\n\n";
+}
+
+void numeroDeDivisores(int N)
+{
+	int i = 1;
+	int SOMA_DOS_DIVISORES = 0;
+
+	while (i < N)
+	{
+		if (N % i == 0)
+		{
+			SOMA_DOS_DIVISORES += 1;
+		}
+
+		i++;
+	}
+
+	SOMA_DOS_DIVISORES += 1; //Ele mesmo
+
+	cout << "\nEste numero tem " << SOMA_DOS_DIVISORES << " divisores.\n\n\n";
+}
+
+void equacaoDaQuesta_2_13(float N)
+{
+	float S = 1 + (1 / 2) + (1 / 3) + (1 / 4) + (1 / 5) + (1 / N);
+
+	cout << "\nResultado: " << S << "\n\n\n";
+}
