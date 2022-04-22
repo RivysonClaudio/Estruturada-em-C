@@ -1,0 +1,315 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//Lista: Exercicio 1.1
+	/*
+	int a, b, c, r, s, d;
+
+	cout << "Digite 3 Numeros inteiros: \n\nNumero A: ";
+	cin >> a;
+
+	cout << "\nNumero B: ";
+	cin >> b;
+
+	cout << "\nNumero C: ";
+	cin >> c;
+	
+	r = pow((a + b), 2);
+	s = pow((b + c), 2);
+
+	d = (r + s) / 2;
+
+	cout << "\n\nResultado: " << d << "\n\n\n";
+	*/
+
+	//Lista: Exercicio 1.2
+	/*
+	int a, m, d, r;
+
+	cout << "\nQuantos anos voce tem: ";
+	cin >> a;
+
+	m = a * 12;
+	r = (a * 12) % 30;
+
+	cout << "\n\nSua idade em meses e igual a: " << m << " meses e " << r << " dias.";
+
+	d = (m * 30) + r;
+
+	cout << "\n\nSua idade em dias e igual a: " << d << " dias.\n\n\n";
+	*/
+
+	//Lista: Exercicio 1.3
+	/*
+	int a, m, d, r;
+
+	cout << "\nEscreva sua idade em dias: ";
+	cin >> d;
+
+	a = d / 365;
+	m = a / 12;
+	r = m % 30;
+
+	cout << "\n\nVoce tem " << a << " anos " << m << " meses e " << r << " dias.\n\n\n";
+	*/
+
+	//Lista: Exercicio 1.4
+	/*
+	float n1, n2, n3;
+	float media;
+
+	cout << "\n\nEntre com as notas do aluno\n\nNota 1: ";
+	cin >> n1;
+
+	cout << "\nNota 2: ";
+	cin >> n2;
+
+	cout << "\nNota 3: ";
+	cin >> n3;
+
+	n1 = n1 * 2;
+	n2 = n2 * 3;
+	n3 = n3 * 5;
+
+	media = (n1 + n2 + n3) / 10;
+
+	cout << "\n\nA media final e igual a: " << media << "\n\n\n";
+	*/
+
+	//Lista: Exercicio 1.5
+	/*
+	int s;
+	int h = 0;
+	int m = 0;
+
+	cout << "Qual o tempo de duracao do evento (em segundos): ";
+	cin >> s;
+
+	while (s >= 60) 
+	{
+		s -= 60;
+		m += 1;
+	}
+	while (m >= 60)
+	{
+		m -= 60;
+		h += 1;
+	}
+
+	cout << "\n\nO evento durou " << h << " horas, " << m << " minutos e " << s << " segundos.\n\n\n";
+	*/
+
+	//Lista: Exercicio 1.6
+	/*
+	float c, cf;
+	float DISTRIBUIDOR = 0.28;
+	float IMPOSTOS = 0.45;
+
+	cout << "Escreva o custo de fabrica do veiculo: ";
+	cin >> c;
+
+	cf = c + (c * DISTRIBUIDOR) + (c * IMPOSTOS);
+
+	cout << "\n\nO custo do veiculo para o cliente sera: R$" << cf << "\n\n\n";
+	*/
+
+	//Lista: Exercicio 1.8
+	/*
+	float h;
+	int SEXO;
+	float pesoIdeal;
+
+	cout << "Digite sua altura: ";
+	cin >> h;
+
+	cout << "Selecione o seu sexo:\n [1] Para Masculino\n [2] Para Feminino\n\n --> ";
+	cin >> SEXO;
+
+	if (SEXO == 1)
+	{
+		pesoIdeal = (72.7 * h) - 58;
+		cout << "\nO Seu peso ideal e: " << pesoIdeal << "\n\n\n";
+	}
+	else if (SEXO == 2)
+	{
+		pesoIdeal = (62.1 * h) - 44.7;
+		cout << "\nO Seu peso ideal e: " << pesoIdeal << "\n\n\n";
+	}
+	*/
+
+	//Lista: Exercicio 1.9
+	/*
+	int a, b, c, h;
+	int AREA;
+
+	cout << "Digite 3 valores de um triangulo (inteiros e positivos)\n\nLado A: ";
+	cin >> a;
+
+	cout << "Lado B: ";
+	cin >> b;
+
+	cout << "C (base): ";
+	cin >> c;
+	
+	if (a < b + c)
+	{
+		cout << "\nPara o calculo da Area e necessario informar a altura do triangulo.\nInforme a altura: ";
+		cin >> h;
+
+		AREA = (c * h) / 2;
+
+		cout << "\n\nA area do triangulo e de: " << AREA << "\n\n\n";
+	}
+	else
+	{
+		cout << "\nOs valores informados nao formam um triangulo\n\n\n";
+	}
+	*/
+
+	//Lista: Exercicio 1.10
+	/*
+	int hI, hT;
+	int DIA;
+	int tempoJogo;
+	int tempoLimite = 24;
+
+	cout << "DURACAO DO JOGO\n\nDigite a hora do inicio do Jogo (Apenas valores inteiros): ";
+	cin >> hI;
+
+	cout << "\nDigite a hora do termino do Jogo (Apenas valores inteiros): ";
+	cin >> hT;
+
+	cout << "\nDigite\n [1] Caso o Jogo tenha comecado e terminado no mesmo dia.\n [2] Caso o Jogo tenha comecado em um dia e terminado no outro.\n\n--> ";
+	cin >> DIA;
+	
+	if (DIA == 1)
+	{
+		tempoJogo = hT - hI;
+
+		cout << "\nO jogo durou " << tempoJogo << " horas\n\n\n";
+	}
+	else if (DIA == 2)
+	{
+		tempoJogo = 24 - hI + hT;
+
+		if (tempoJogo > 24)
+		{
+			cout << "\nDuracao do jogo excedeu 24 horas.\n\n\n";
+		}
+		else
+		{
+			cout << "\nO jogo durou " << tempoJogo << " horas\n\n\n";
+		}
+	}
+	*/
+
+	//Lista: Exercicio 1.11
+	/*
+	int a, b, c, i;
+
+	int MAIOR, MEIO, MENOR;
+
+	cout << "Digite 3 numeros inteiros\n\n1/3: ";
+	cin >> a;
+
+	cout << "\n2/3: ";
+	cin >> b;
+
+	cout << "\n3/3: ";
+	cin >> c;
+
+	cout << "Digite\n";
+	cout << " [1] Para organizar os valores em ordem crescente.\n [2] Para organizar os valores em ordem decrescente.\n [3] Para organizar os valores de forma que maior valor fique no meio.\n\n --> ";
+	cin >> i;
+
+	if (a > b) //Para o maior
+	{
+		MAIOR = a;
+	}
+	else
+	{
+		MAIOR = b;
+	}
+	if (c > b)
+	{
+		MAIOR = c;
+	}
+
+	if (a < b) //Para o menor
+	{
+		MENOR = a;
+	}
+	else
+	{
+		MENOR = b;
+	}
+	if (c < b)
+	{
+		MENOR = c;
+	}
+
+	if ((MAIOR == a && MENOR == b) //Para o meio
+		|| (MAIOR == b && MENOR == a))
+	{
+		MEIO = c;
+	}
+	else if ((MAIOR == a && MENOR == c)
+		|| (MAIOR == c && MENOR == a))
+	{
+		MEIO = b;
+	}
+	else if ((MAIOR == b && MENOR == c)
+		|| (MAIOR == c && MENOR == b))
+	{
+		MEIO = a;
+	}
+
+	switch (i)
+	{
+	case 1:
+		cout << "\n\nCrescente: " << MENOR << ", " << MEIO << ", " << MAIOR << "\n\n\n";
+		break;
+
+	case 2:
+		cout << "\n\nDecrescente: " << MAIOR << ", " << MEIO << ", " << MENOR << "\n\n\n";
+		break;
+
+	case 3:
+		cout << "\n\nO maior no meio: " << MENOR << ", " << MAIOR << ", " << MEIO << "\n\n\n";
+		break;
+
+	default:
+		break;
+	}
+	*/
+
+	//Lista: Exercicio 1.12
+	/*
+	float i;
+
+	cout << "Digite o indice de poluicao: ";
+	cin >> i;
+
+	if ((i >= 0.05) && (i <= 0.25))
+	{
+		cout << "\n\nIndice de poluicao aceitavel.\n\n\n";
+	}
+	if ((i > 0.25) && (i <= 0.3))
+	{
+		cout << "\n\nINDUSTRIAS GRUPO 1: SUSPENDER ATIVIDADES!\n\n\n";
+	}
+	if ((i > 0.3) && (i <= 0.4))
+	{
+		cout << "\n\nINDUSTRIAS GRUPO 1: SUSPENDER ATIVIDADES!\nINDUSTRIAS GRUPO 2: SUSPENDER ATIVIDADES!\n\n\n";
+	}
+	if (i > 0.4)
+	{
+		cout << "\n\nINDUSTRIAS GRUPO 1: SUSPENDER ATIVIDADES!\nINDUSTRIAS GRUPO 2: SUSPENDER ATIVIDADES!\nINDUSTRIAS GRUPO 3: SUSPENDER ATIVIDADES!\n\n\n";
+	}
+	*/
+
+}
