@@ -1,0 +1,176 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//Exercicio 3.1 Lista
+	/*
+	float n1, n2;
+	float RESULTADO = 0;
+	string OPERADOR;
+	string saida = "R";
+	bool operadorValido = true;
+
+	
+	cout << "\n :::::::::::::\n  CALCULADORA\n :::::::::::::\n";
+	
+	do
+	{
+		if ((saida == "C") || (saida == "c"))
+		{
+			n1 = RESULTADO;
+		}
+		else if ((saida == "R") || (saida == "r"))
+		{
+			cout << "\n--> ";
+			cin >> n1;
+		}
+		else if ((saida == "S") || (saida == "s"))
+		{
+			break;
+		}
+		else
+		{
+			cout << "\n\nOpcao invalida\n\n\n";
+			break;
+		}
+
+		cout << "\n\nEscolha uma das seguintes operacoes [v]" <<
+			"\n > [+] Para somar" <<
+			"\n > [-] Para subtrair" <<
+			"\n > [/] Para dividir" <<
+			"\n > [*] Para multiplicar" <<
+			"\n\n--> ";
+		cin >> OPERADOR;
+
+		cout << "\n\n--> ";
+		cin >> n2;
+
+		if (OPERADOR == "+")
+		{
+			RESULTADO = n1 + n2;
+			operadorValido = true;
+		}
+		else if (OPERADOR == "-")
+		{
+			RESULTADO = n1 - n2;
+			operadorValido = true;
+		}
+		else if (OPERADOR == "/")
+		{
+			RESULTADO = n1 / n2;
+			operadorValido = true;
+		}
+		else if (OPERADOR == "*")
+		{
+			RESULTADO = n1 * n2;
+			operadorValido = true;
+		}
+		else if ((OPERADOR != "+")
+			|| (OPERADOR != "-")
+			|| (OPERADOR != "/")
+			|| (OPERADOR != "*"))
+		{
+			cout << "\n\nNenhum operador valido utilizado o programa foi reinicilizado.\n";
+			operadorValido = false;
+		}
+
+		if (operadorValido == true)
+		{
+			cout << "\n\nRESULTADO: " << RESULTADO << "\n\n";
+			cout << "\nDigite:\n[C] Para Continuar\n[R] Para Reiniciar\n[S] Para Sair\n\n--> ";
+			cin >> saida;
+		}
+
+	} while (saida != "S");
+	*/
+
+	//Exercicio 3.2 Lista
+
+	float VINTE_POR_CENTO = 0.2, TRINTA_POR_CENTO = 0.3, grama;
+	double standardALE = 0.0, strongALE = 0.0;
+	int litro = 0, l, m, i = 0;
+	string marca, tipo;
+
+	cout << "\nDigite a quantidade (em litros) a ser inoculado: ";
+	cin >> litro;
+
+	cout << "\n\nSelecione o tipo de cerveja a ser produzido" <<
+		"\n[1] Standard ALE" <<
+		"\n[2] Strong ALE\n\n --> ";
+	cin >> l;
+
+	cout << "\nSelecione a marca de levedura a ser utilizado" <<
+		"\n[1] US\n[2] Demais marcas\n\n --> ";
+	cin >> m;
+
+	if (l == 1)
+	{
+		while (i < litro)
+		{
+			standardALE += 1.7;
+			i++;
+		}
+		standardALE = standardALE + (standardALE * VINTE_POR_CENTO);
+		tipo = "Standard ALE";
+	}
+	else if (l == 2)
+	{
+		while (i < litro)
+		{
+			strongALE += 1.7;
+			i++;
+		}
+		strongALE = strongALE + (strongALE * TRINTA_POR_CENTO);
+		tipo = "Strong ALE";
+	}
+	else
+	{
+		cout << "\nNenhum tipo de cerveja valido selecionado.";
+	}
+
+	if ((m == 1) &&
+		((l == 1) || (l == 2)))
+	{
+		if (l == 1)
+		{
+			grama = standardALE * 0.085;
+		}
+		else
+		{
+			grama = strongALE * 0.085;
+		}
+		marca = "US";
+	}
+	else if ((m == 2) &&
+		((l == 1) || (l == 2)))
+	{
+		if (l == 1)
+		{
+			grama = standardALE * 0.10;
+		}
+		else
+		{
+			grama = strongALE * 0.10;
+		}
+		marca = "outras marcas";
+	}
+
+	if (l == 1)
+	{
+		cout 
+			<< "\nNa inoculacao de " << litro << " litro(s) de cerveja do tipo " << tipo
+			<< "\n- Serao utilizados " << standardALE << " bilhoes celulas de levedura."
+			<< "\n- Serao necessarios " << grama << " grama(s) da levedura " << marca << "."
+			<< "\n\n\n";
+	}
+	else
+	{
+		cout 
+			<< "\nNa inoculacao de " << litro << " litro(s) de cerveja do tipo " << tipo
+			<< "\n- Serao utilizados " << strongALE << " bilhoes celulas de levedura."
+			<< "\n- Serao necessarios " << grama << " grama(s) da levedura " << marca << "."
+			<< "\n\n\n";
+	}
+}
