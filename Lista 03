@@ -173,4 +173,113 @@ int main()
 			<< "\n- Serao necessarios " << grama << " grama(s) da levedura " << marca << "."
 			<< "\n\n\n";
 	}
+	*/
+
+	//Exercicio 3.3 Lista
+	/*
+	Depois eu faço
+	*/
+
+	//Exercicio 3.4 Lista
+	/*
+	for (int i = 0; i < 10; i++)
+	{
+		if ((i == 0) || (i == 9))
+		{
+			for (int j = 1; j < 9; j++)
+			{
+				for (int k = 0; k < 10; k++)
+				{
+					if ((k == 0) || (k == 9))
+					{
+						for (int l = 1; l < 9; l++)
+						{
+							for (int m = 0; m < 9; m++)
+							{
+								cout << i << j << k << l << m << "-";
+							}
+						}
+					}
+					else
+					{
+						for (int l = 0; l < 10; l++)
+						{
+							if ((l == 0) || (l == 9))
+							{
+								for (int m = 1; m < 9; m++)
+								{
+									cout << i << j << k << l << m << "-";
+								}
+							}
+							else
+							{
+								for (int m = 0; m < 9; m++)
+								{
+									cout << i << j << k << l << m << "-";
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		else
+		{
+			for (int j = 0; j < 10; j++)
+			{
+				if ((j == 0) || (j == 9))
+				{
+					for (int k = 1; k < 9; k++)
+					{
+						for (int l = 0; l < 10; l++)
+						{
+							if ((l == 0) || (l == 9))
+							{
+								for (int m = 1; m < 9; m++)
+								{
+									cout << i << j << k << l << m << "-";
+								}
+							}
+							else
+							{
+								for (int m = 0; m < 9; m++)
+								{
+									cout << i << j << k << l << m << "-";
+								}
+							}
+						}
+					}
+				}
+				else
+				{
+					for (int k = 0; k < 10; k++)
+					{
+						if ((k == 0) || (k == 9))
+						{
+							for (int k = 1; k < 9; k++)
+							{
+								for (int l = 0; l < 10; l++)
+								{
+									if ((l == 0) || (l == 9))
+									{
+										for (int m = 1; m < 9; m++)
+										{
+											cout << i << j << k << l << m << "-";
+										}
+									}
+									else
+									{
+										for (int m = 0; m < 9; m++)
+										{
+											cout << i << j << k << l << m << "-";
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}*/
 }
